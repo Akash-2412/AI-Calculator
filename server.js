@@ -10,7 +10,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Allow requests from the React frontend (localhost:5173)
 app.use(cors({ origin: "*" }));

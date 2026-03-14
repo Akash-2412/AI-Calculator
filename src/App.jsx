@@ -329,7 +329,7 @@ export default function App() {
       const b64 = temp.toDataURL("image/png").split(",")[1];
 
       // Step 2: Send to our backend
-      const res = await fetch("https://ai-calculator-v618.onrender.com", {
+      const res = await fetch("https://ai-calculator-v618.onrender.com/calculate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ imageBase64: b64 }),
