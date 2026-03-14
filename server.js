@@ -13,7 +13,7 @@ const app = express();
 const PORT = 3001;
 
 // Allow requests from the React frontend (localhost:5173)
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "*" }));
 
 // Accept large base64 image payloads (canvas can be big)
 app.use(express.json({ limit: "10mb" }));
