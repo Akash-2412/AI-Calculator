@@ -4,10 +4,9 @@
 
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 
 // Load variables from .env file into process.env
-dotenv.config();
+//dotenv.config({ override: false });
 
 const app = express();
 const PORT = process.env.PORT || 3001;
