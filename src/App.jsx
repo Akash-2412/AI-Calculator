@@ -359,7 +359,7 @@ export default function App() {
 
       {/* ── Header ── */}
       <header className="header">
-        <h1 className="header-title">AI Drawing Calculator</h1>
+        <h1 className="header-title">AI Drawing Calculator v1</h1>
         <span className="header-sub">Powered by Gemini Vision</span>
       </header>
 
